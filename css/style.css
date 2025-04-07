@@ -1412,7 +1412,9 @@ body::after {
   .button {
     font-size: .625rem;
     padding: .3125rem .4375rem;
-    height: 1.875rem
+    height: 1.875rem;
+    border-radius: .3125rem;
+    border-width: .0625rem
   }
   .social-icon {
     width: 2.5625rem
