@@ -68,6 +68,9 @@ textarea {
 label {
   display: inline-block
 }
+button {
+  outline: 0
+}
 button,
 option,
 select {
@@ -223,10 +226,13 @@ h6 {
   border-bottom: .125rem solid #000;
   position: absolute;
   content: "";
-  inset: 0;
+  left: 0;
+  top: -.125rem;
+  width: 100%;
+  height: 100%;
   border-radius: inherit;
-  -webkit-filter: drop-shadow(.125rem .125rem .125rem rgba(0, 0, 0, .85));
-  filter: drop-shadow(.125rem .125rem .125rem rgba(0, 0, 0, .85))
+  -webkit-filter: drop-shadow(.125rem .1875rem .625rem rgba(0, 0, 0, .85));
+  filter: drop-shadow(.125rem .1875rem .625rem rgba(0, 0, 0, .85))
 }
 .social-icon {
   aspect-ratio: 1/1;
@@ -798,7 +804,7 @@ body::after {
 }
 .order::after {
   position: absolute;
-  top: -10%;
+  top: -5%;
   right: 0;
   width: 80%;
   height: 100%;
