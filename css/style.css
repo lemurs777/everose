@@ -216,6 +216,7 @@ h6 {
   align-items: center;
   padding: 1.3125rem 1.1875rem;
   gap: .4375rem;
+  background-color: red;
   height: 5.125rem;
   transition: .2s ease-in-out;
   position: relative;
