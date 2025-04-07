@@ -225,8 +225,8 @@ h6 {
   content: "";
   inset: 0;
   border-radius: inherit;
-  -webkit-filter: drop-shadow(.125rem .1875rem .625rem rgba(0, 0, 0, .95));
-  filter: drop-shadow(.125rem .1875rem .625rem rgba(0, 0, 0, .95))
+  -webkit-filter: drop-shadow(.125rem .125rem .125rem rgba(0, 0, 0, .85));
+  filter: drop-shadow(.125rem .125rem .125rem rgba(0, 0, 0, .85))
 }
 .social-icon {
   aspect-ratio: 1/1;
@@ -801,10 +801,10 @@ body::after {
   top: -10%;
   right: 0;
   width: 80%;
-  aspect-ratio: 1555/5354;
+  height: 100%;
   opacity: .9;
   z-index: -2;
-  background: url(../img/bg-bottom-sm.webp) center/cover no-repeat;
+  background: url(../img/bg-bottom-sm.webp) right center/contain no-repeat;
   content: ""
 }
 .order__container {
