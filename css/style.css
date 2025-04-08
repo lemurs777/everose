@@ -797,7 +797,7 @@ body::after {
 }
 .order::after {
   position: absolute;
-  top: -5%;
+  top: -10%;
   right: 0;
   width: 80%;
   height: 100%;
@@ -901,8 +901,13 @@ body::after {
   font-size: 2.375rem;
   line-height: 188%
 }
+.page {
+  position: relative;
+  z-index: 5
+}
 .contact {
-  margin: 9.25rem 0 3rem
+  margin: 9.25rem 0 3rem;
+  position: relative
 }
 .contact__container {
   max-width: 94.625rem
@@ -1009,6 +1014,16 @@ body::after {
   z-index: 2;
   margin: 3.75rem 0
 }
+.footer::after {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1554/786;
+  content: "";
+  background: url(../img/bant.webp) bottom right/contain no-repeat;
+  bottom: -3.75rem;
+  right: 0;
+  z-index: -1
+}
 .footer__container {
   max-width: 94.625rem
 }
@@ -1028,14 +1043,14 @@ body::after {
   min-height: 72.8125rem
 }
 .hero__container {
-  max-width: none
+  max-width: 97.5rem
 }
 .hero__inner {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  padding: 15.625rem 0 0 3rem
+  padding: 15.625rem 0 0 0
 }
 .hero__logo {
   width: 27.125rem;
@@ -1644,6 +1659,9 @@ body::after {
     gap: 1.25rem;
     font-size: .9375rem
   }
+  .footer::after {
+    display: none
+  }
   .footer {
     margin: 1.875rem 0
   }
@@ -1660,7 +1678,7 @@ body::after {
     margin-bottom: 2.5rem
   }
   .hero__inner {
-    padding: 6.875rem 0 0 2.5rem
+    padding: 6.875rem 0 0 0
   }
   .hero__inner .button {
     margin-left: 1.75rem
