@@ -1,4 +1,4 @@
-body :root {
+body {
   --header-height: 13.125rem
 }
 @font-face {
@@ -544,7 +544,7 @@ body::after {
   background: linear-gradient(6.67deg,rgba(188,191,194,0) 5.24%,rgba(188,191,194,.456731) 20.3%,rgba(188,191,194,.663462) 43.12%,rgba(188,191,194,.831731) 64.64%,#bcbfc2 94.78%)
 }
 .header__container {
-  max-width: 92.75rem
+  max-width: none
 }
 .header__mobile-logo {
   display: flex;
@@ -590,7 +590,7 @@ body::after {
   left: 0
 }
 .header__inner::after {
-  right: 0;
+  right: 18rem;
   width: 13.125rem
 }
 .header__left {
@@ -661,7 +661,8 @@ body::after {
   width: 37.5rem
 }
 .header--fixed .header__inner::after {
-  width: 39.25rem
+  width: 39.25rem;
+  right: 0
 }
 .header--fixed .header__contact,
 .header--fixed .header__right {
@@ -671,6 +672,9 @@ body::after {
 .header--fixed .header__logo {
   display: block;
   opacity: 1
+}
+.header--content .header__inner::after {
+  right: 0
 }
 .catalog {
   margin: 5.8125rem 0;
@@ -1010,11 +1014,12 @@ body::after {
 }
 .footer__copy {
   font-family: Shree,sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.6875rem;
   color: rgba(39,37,31,.5);
   line-height: 1.5
 }
 .footer__copy img {
+  width: 3.25rem;
   vertical-align: middle
 }
 .hero {
@@ -1324,6 +1329,9 @@ body::after {
     display: block;
     opacity: 1
   }
+  .company__content-top br {
+    display: none
+  }
   .help-item__img {
     width: 7.8125rem
   }
@@ -1371,7 +1379,7 @@ body::after {
   }
 }
 @media (max-width:47.9988rem) {
-  body :root {
+  body {
     --header-height: 5rem
   }
 }
@@ -1673,6 +1681,9 @@ body::after {
   .company__body {
     flex-direction: column
   }
+  .company__content-top {
+    width: 100%
+  }
   .company__text {
     gap: 1em;
     font-style: italic;
@@ -1687,7 +1698,8 @@ body::after {
     font-style: italic;
     font-size: 1.25rem;
     line-height: 119%;
-    color: rgba(0,0,0,.8)
+    color: rgba(0,0,0,.8);
+    max-width: 21.9375rem
   }
   .company__images {
     display: none
@@ -1789,7 +1801,8 @@ body::after {
     font-size: .875rem
   }
   .product-card__info {
-    font-size: .875rem
+    font-size: .75rem;
+    line-height: 1.2
   }
   .product-card__description {
     font-size: .75rem;
